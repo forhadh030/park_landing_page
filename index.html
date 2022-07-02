@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css">
     <style>
 .img {
     height: 200px;
@@ -17,75 +18,78 @@
 }
     </style>
 </head>
-<body class="main bg-dark text-white">
-<!-- header/title of the page -->
-<div class="p-5 bg-primary text-center">
-    <h1>My First Bootstrap 5 Page</h1>
-    <p>Resize this responsive page to see the effect!</p> 
-</div>
-<!-- navigation link just below the title/header -->
-<nav class="navbar navbar-expand-md bg-primary navbar-dark">
-    <div class="container-fluid justify-content-center">
-        <ul class="navbar-nav">
-            <li class="nav-item active">
-            <a class="nav-link active" href="/index.html">Home Page</a>
-            </li>
-            <a class="nav-link" href="/photo_gallery.html">Photo Gallery</a>
-            </li>
-            <li class="nav-item">
-            <a class="nav-link" href="/park_location.html">Location</a>
-            </li>
-        </ul>
+<body class="main bg-dark text-white" data-spy="scroll">
+    <!-- header/title of the page -->
+    <div class="p-5 bg-primary text-center">
+        <h1>My First Bootstrap 5 Page</h1>
+        <h1>ASTORIA PARK</h1> 
     </div>
-</nav>
-
-<div class="container mt-3">
-    <div class="row">
-        <!-- About me section -->
-        <div class="col-md-4 pt-3">
-        <h2>About Me</h2>
-        <h5>Photo of me:</h5>
-        <div><img class="img" src="images/Me.jpeg"> </div>
-        <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
-        <h3 class="mt-4">Some Links</h3>
-        <p>Lorem ipsum dolor sit ame.</p>
-        <!-- nav link to the side of the screen -->
-        <ul class="nav nav-pills flex-column">
-            <li class="nav-item">
-            <a class="nav-link active" href="#">Active</a>
-            </li>
-            <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-            <a class="nav-link disabled" href="#">Disabled</a>
-            </li>
-        </ul>
-        <hr class="d-sm-none">
-        <!-- Main section -->
+    <!-- navigation link just below the title/header -->
+    <nav class="navbar navbar-expand-md bg-primary navbar-dark">
+        <div class="container-fluid justify-content-center">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                <a class="nav-link active" href="/index.html">Home Page</a>
+                </li>
+                <a class="nav-link" href="/photo_gallery.html">Photo Gallery</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="/park_location.html">Location</a>
+                </li>
+            </ul>
         </div>
-        <div class="col-md-8">
-        <h2>ASTORIA BRIDGE</h2>
-        <h5>Sunset, July 1st, 2022</h5>
-        <div><img src="/images/astoria-park-06.jpg"></div>
-        <p>Some text..</p>
-        <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    </nav>
 
-        <h2 class="mt-5">TITLE HEADING</h2>
-        <h5>Title description, Sep 2, 2020</h5>
-        <div class="fakeimg">Fake Image</div>
-        <p>Some text..</p>
-        <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    <div class="container mt-3">
+        <div class="row">
+            <!-- About me section -->
+            <div class="col-md-3 pt-3 border text-center">
+                <h2>About Me</h2>
+                <h5>Photo of me:</h5>
+                <div class="col-sm-3 m-4"><img class="img" src="images/Me.jpeg"> </div>
+                <p> Hello, my name is <strong>Syed Hussain</strong> and I am a beginner programmer. This website is all just for fun, practice and assignment.</p>
+                <h3 class="mt-4">Official Links</h3>
+                <p>Websites and Resources:</p>
+                <!-- nav link to the side of the screen -->
+                <ul class="nav nav-pills flex-column">
+                    <li class="nav-item">
+                    <a class="nav-link active" href="https://www.nycgovparks.org/parks/astoria-park">NYC.GOV</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="https://en.wikipedia.org/wiki/Astoria_Park">Wikipedia Astoria Park</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="https://www.tripadvisor.com/Attraction_Review-g29837-d646883-Reviews-Astoria_Park-Astoria_Queens_New_York.html">Trip Advisor Review</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link disabled" href="https://www.yelp.com/biz/astoria-park-astoria">Yelp Review</a>
+                    </li>
+                </ul>
+                <hr class="d-sm-none">
+            </div>
+            <div class="col-sm-6 pt-3 border">
+                <h5>Sunset, July 1st, 2022</h5>
+                <div class="mid-img"><img src="/images/astoria-park-06.jpg"></div>
+                <p>Some text..</p>
+                <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+
+                <h2 class="mt-5">TITLE HEADING</h2>
+                <h5>Title description, Sep 2, 2020</h5>
+                <div class="fakeimg">Fake Image</div>
+                <p>Some text..</p>
+                <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                <hr class="d-sm-none">
+            </div>
+            <div class="col-sm-3 pt-3 border">
+                <p>test testing 1, 2</p>
+                asfsdadgad
+                sdafadfadsfa
+            </div>
         </div>
     </div>
-</div>
-<!-- This is the footer where things go at the bottom; address/location -->
-<div class="mt-5 p-4 bg-dark text-white text-center">
-    <p>Footer</p>
-</div>
-
+    <!-- This is the footer where things go at the bottom; address/location -->
+    <div class="mt-5 p-4 bg-dark text-white text-center">
+        <p>&copy; https://www.w3schools.com/bootstrap5/tryit.asp?filename=trybs_template1</p>
+    </div>
 </body>
 </html>
