@@ -8,17 +8,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="style.css">
     <style>
-.img {
-    height: 200px;
-    background: #aaa;
-}
-.p-5 {
-    background-image: url(images/astoria_firework.jpg);
-    background-size: auto;
-}
     </style>
 </head>
-<body class="main bg-dark text-white" data-spy="scroll">
+<body class="main bg-dark text-white" data-spy="scroll" data-target="#myScrollspy" data-offset="20">
     <!-- header/title of the page -->
     <div class="p-5 bg-primary text-center">
         <h1>My First Bootstrap 5 Page</h1>
@@ -40,8 +32,35 @@
         </div>
     </nav>
 
-    <div class="container mt-3">
-        <div class="row">
+    <div class="container mt-5">
+        <div class="row row-cols-3 border">
+            <!-- Side section -->
+            <nav class="col-sm-3" id="myScrollspy">
+                <ul class="nav nav-pills flex-column p-4">
+                    <h2>Content:</h2>
+                  <li class="active"><a href="#section1">Description</a></li>
+                  <li><a href="#section2">Recreational Facilities</a></li>
+                  <li><a href="#section3">Astoria Play Center</a></li>
+                  <li class="dropdown">
+                  </li>
+                </ul>
+            </nav>
+            <!-- Main section -->
+            <div class="col-sm-6 pt-3 border">
+                <h5>Sunset, July 1st, 2022</h5>
+                <div class="mid-img"><img src="/images/astoria-park-06.jpg"></div>
+                <h4 id="section1">Description</h4>
+                <p>Astoria Park is in the Astoria neighborhood of Queens in New York City. It is bounded by Astoria Park South, an extension of Hoyt Avenue, to the south; the Hell Gate, a strait of the East River, to the west; Ditmars Boulevard to the north; and 19th Street to the east.[3][4][5] The RFK (Triborough) Bridge crosses over the southern section of Astoria Park. The Hell Gate Bridge, carrying Amtrak's Northeast Corridor and the New York Connecting Railroad, crosses over the northern section.[3] The park is separated from the Hell Gate and the East River by a 30-foot-wide (9.1 m) road called Shore Boulevard.[6]</p> 
+                <p>The park covers 59.96 acres (24.26 ha).[7] The southeastern corner of the park under the RFK Bridge, between Hoyt Avenue North and Hoyt Avenue South, extends east to 21st Street.[6] Astoria Park is crossed by numerous paths, of which some are paved in hexagonal blocks, while others contain asphalt paving. Several paths are built on slopes and contain staggered steps.[8] Several entrances are spaced around the perimeter of the park.[9]</p> 
+                <p>In the western portion of the park, along Shore Boulevard, is a memorial dedicated to World War I victims.[10][11] There is also a plaque commemorating the PS General Slocum,[12] which caught fire and sunk in the Hell Gate in 1904,[7][13][14] killing over a thousand people.[15] </p>
+                <h2 id="section2">Recreational Facilities</h2>
+                <p>Recreational facilities are concentrated in the southern two-thirds of the park, south of 23rd Avenue.[9][16][17] The southernmost portion of Astoria Park, at 18th Street and Astoria Park South, contains a 0.25-mile (400 m) running track,[18] which surrounds a soccer field.[9][16] East of the running track are fourteen tennis courts[19] and a restroom. The tennis court area protrudes slightly under the RFK Bridge.[9][16] A "tennis landscape" separates the tennis courts from the street. There is a parking lot just north of the running track, underneath the RFK Bridge and at the western end of Hoyt Avenue North.[9] Also underneath the bridge, west of the parking lot, is a 21,500-square-foot (2,000 m2) skate park.[20][21]</p>
+                <p>The central portion of the park contains the Astoria Pool and Play Center.[4] There are also basketball courts southwest of the pool area,[9][16] as well as bocce courts and Charybdis Playground north of the pool area.[22] Charybdis Playground sits opposite the Hell Gate from Scylla Point on Wards Island. The two features are named after Scylla and Charybdis, two water hazards described in Homer's Odyssey,[13][23] and refer to the dangerous whirlpools in the waters of the Hell Gate.[24] Charybdis Playground was named first, in 1997;[23] Scylla Point was named in 2001 after parks commissioner Henry Stern petitioned the federal government to rename what was then known as "Negro Point", in 2001.[25] Charybdis Playground contains a decorated one-story brick restroom. The restroom contains decorative piers protruding from all four corners; glass-block openings; and Art Deco lettering indicating the girls' and boys' restrooms.[26]</p>
+                <h2 id="section3">Astoria Play Center</h2>
+                <p>Astoria Park contains an enclosed elliptical pool area that is aligned north-south, with two pools[27] (formerly three).[28] The main pool is rectangular and measures 330 by 165 feet (101 by 50 m),[29][30][31] with a depth of 4 feet (1.2 m)[31] and a surface area of 54,450 square feet (5,059 m2).[32] It was the largest of 11 pools in New York City that were completed by the Works Progress Administration in 1936.[33] At its peak, the pool area was able to fit 6,200 swimmers,[4][14][34] and the main pool alone had a capacity of 5,570.[29] The pools hosted swimming trials for three Summer Olympic Games in 1936, 1952, and 1964.[35]</p>
+                <p>The main pool is flanked by two semicircular pools, each with a 165-foot diameter.[36] The wading pool is north of the main pool and is surrounded by spray spouts.[27] The diving pool to the south was drained and fenced off in the 1980s,[27] and was totally infilled between 2017 and 2019.[28] The still-extant diving board measures 32 feet (9.8 m) tall,[30][37] with three platforms cantilevered over each other.[27][38] The diving board, described by Architectural Record as "an example of design for function",[39] allowed four contestants to dive simultaneously: one each from the top and bottom, and two from the middle.[38]</p>
+                <p>The deck surrounding the pools is made of cement. The deck is surrounded by concrete bleachers and enclosed by a brick perimeter wall topped by a wrought iron fence.[40] There is also a filter house on the western side of the pool area. The filter house contains a balcony that is raised one story above the pool deck and two stories above a plaza to the west. The filter house's balcony has a roof that is designed like a saucer.[8]</p>  
+            </div>
             <!-- About me section -->
             <div class="col-md-3 pt-3 border text-center">
                 <h2>About Me</h2>
@@ -50,7 +69,7 @@
                 <p> Hello, my name is <strong>Syed Hussain</strong> and I am a beginner programmer. This website is all just for fun, practice and assignment.</p>
                 <h3 class="mt-4">Official Links</h3>
                 <p>Websites and Resources:</p>
-                <!-- nav link to the side of the screen -->
+                <!-- nav link to the left side of the screen -->
                 <ul class="nav nav-pills flex-column">
                     <li class="nav-item">
                     <a class="nav-link active" href="https://www.nycgovparks.org/parks/astoria-park">NYC.GOV</a>
@@ -62,28 +81,9 @@
                     <a class="nav-link" href="https://www.tripadvisor.com/Attraction_Review-g29837-d646883-Reviews-Astoria_Park-Astoria_Queens_New_York.html">Trip Advisor Review</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link disabled" href="https://www.yelp.com/biz/astoria-park-astoria">Yelp Review</a>
+                    <a class="nav-link" href="https://www.google.com">Google</a>
                     </li>
                 </ul>
-                <hr class="d-sm-none">
-            </div>
-            <div class="col-sm-6 pt-3 border">
-                <h5>Sunset, July 1st, 2022</h5>
-                <div class="mid-img"><img src="/images/astoria-park-06.jpg"></div>
-                <p>Some text..</p>
-                <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-
-                <h2 class="mt-5">TITLE HEADING</h2>
-                <h5>Title description, Sep 2, 2020</h5>
-                <div class="fakeimg">Fake Image</div>
-                <p>Some text..</p>
-                <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-                <hr class="d-sm-none">
-            </div>
-            <div class="col-sm-3 pt-3 border">
-                <p>test testing 1, 2</p>
-                asfsdadgad
-                sdafadfadsfa
             </div>
         </div>
     </div>
